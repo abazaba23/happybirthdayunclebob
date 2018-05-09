@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Oxygen', sans-serif;
+            box-sizing: border-box;
+            border: 3px solid grey;
+            border-radius: 20px;
+            margin: 100px auto;
+            min-width: 480px;
+            max-width: 600px;
+        }
+        .top {
+            margin:100px, auto;
+            text-align: center;
+        }
+        .bottom {
+            margin:100px, auto;
+            text-align: center;
+        }
+        .momo {
+            padding: 0px 0px;
+            animation: momo 6s ease 0s infinite;
+            margin-left: 0%;
+            margin-right: 90%;
+        }
+        /* consider adding a stop light */
+        @keyframes momo {
+            0% {
+                transform: scaleX(1.0) rotate(0deg);
+                margin-left: 0%;
+                margin-right: 100%;
+                transform: scaleX(1.0);
+            }
+            15% {
+                transform: scaleX(1.0) rotate(-35deg);
+            }
+            45% {
+                transform: scaleX(1.0) rotate(0deg);
+            }
+            43% {
+                transform: scaleX(1.0);
+            }
+            50% {
+                margin-left: 95%;
+                margin-right: 5%;
+                transform: scaleX(-1.0) rotate(0deg);
+            }
+            65% {
+                transform: scaleX(-1.0) rotate(-35deg);
+            }
+            93% {
+                
+                transform: scaleX(-1.0) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h3 class="top">Happy birthday Uncle Bob!</h3>
+    <div class="momo">
+        <i class="material-icons">
+            motorcycle
+        </i>
+    </div>
+    <p class ="bottom">Made by Steven Andersen. :)</p>
+</body>
+</html>
