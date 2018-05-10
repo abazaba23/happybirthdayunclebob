@@ -32,14 +32,54 @@
             color: #2C365D;
             margin:100px, auto;
             text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
         .momo {
+            animation: momo 6s ease 3s infinite;
             padding: 0px 0px;
-            animation: momo 6s ease 0s infinite;
             margin-left: 0%;
             margin-right: 90%;
         }
-        /* consider adding a stop light */
+        /***********************************
+        the housing of the light */
+        .light {
+            padding: 6px 1px;
+            margin: 12px auto 0px auto;
+            background-color: rgb(56, 56, 56);
+            width: 20px;
+            height: 50px; /* <-- this is all lights + 3px gaps */
+            border-radius: 10%;
+            z-index: 0;
+        }
+        /* the lights */
+        .one {
+            animation: one 1s linear 0s;
+            margin: auto;
+            background-color: red;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .two {
+            animation: two 2s linear 0s;
+            margin: 6px auto;
+            background-color: yellow;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .three {
+            animation: three 3s linear 0s;
+            margin: 6px auto;
+            background-color: green;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            z-index: 1;
+        }
         @keyframes momo {
             0% {
                 transform: scaleX(1.0) rotate(0deg);
@@ -50,7 +90,7 @@
             15% {
                 transform: scaleX(1.0) rotate(-35deg);
             }
-            45% {
+            48% {
                 transform: scaleX(1.0) rotate(0deg);
             }
             50% {
@@ -58,7 +98,7 @@
                 margin-right: 5%;
                 transform: scaleX(-1.0) rotate(0deg);
             }
-            65% {
+            68% {
                 transform: scaleX(-1.0) rotate(-35deg);
             }
             95% {
@@ -66,12 +106,53 @@
                 transform: scaleX(-1.0) rotate(0deg);
             }
         }
+        @keyframes one {
+            0% {
+                background-color: rgb(56, 56, 56);
+            }
+            99% {
+                background-color: rgb(56, 56, 56);
+            }
+            100% {
+                background-color: red;
+            }
+        }
+        @keyframes two {
+            0% {
+                background-color: rgb(56, 56, 56);
+            }
+            99% {
+                background-color: rgb(56, 56, 56);
+            }
+            100% {
+                background-color: red;
+            }
+        }
+        @keyframes three {
+            0% {
+                background-color: rgb(56, 56, 56);
+            }
+            99% {
+                background-color: rgb(56, 56, 56);
+            }
+            100% {
+                background-color: red;
+            }
+        }
     </style>
     <!-- **************************************************************************** -->
     
 </head>
 <body>
-    <section class ="main">
+    <section class="main">
+        <div class="light">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+        
+    
+
         <h1 class="top">Happy birthday Uncle Bob!</h3>
         <div class="momo">
             <i class="material-icons">
